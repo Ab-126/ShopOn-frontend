@@ -1,0 +1,47 @@
+.productListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 85vw;
+  padding: 20px;
+}
+
+#productListHeading {
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.productListTable {
+  font-weight: 300;
+  font-size: 1vmax;
+  background-color: white;
+  border: none !important;
+}
+
+.productListTable a,
+.productListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.productListTable button:hover,
+.productListTable a:hover {
+  color: greenyellow;
+}
+
+@media screen and (max-width: 600px){
+    .productListTable div{
+        font-weight: 300;
+        font-size: 4vw;
+    }
+}

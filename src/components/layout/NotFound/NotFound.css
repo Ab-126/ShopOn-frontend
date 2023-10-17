@@ -1,0 +1,11 @@
+.pnf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pnf img{
+    width: 400px;
+    height: 400px;
+}

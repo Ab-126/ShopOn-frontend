@@ -1,0 +1,57 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+}
+
+.sidebar > a > h3 {
+  padding-left: 40px;
+  width: 100%;
+  font-size: 60px;
+  transition: all 0.5s;
+}
+
+.sidebar > a > h3:hover {
+  filter: drop-shadow(0 0 10px rgb(255, 175, 255));
+}
+
+.sidebar > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+  font: 200 1rem "Titillium Web";
+  padding: 2rem;
+  transition: all 0.5s;
+}
+
+.sidebar > a > p {
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar a:hover,
+.sidebar a p:hover {
+  color: rgb(255, 175, 255);
+  transform: scale(1.05);
+}
+
+.sidebar a > p > svg{
+    margin-right: 0.5rem;
+}
+
+.MuiCollapse-wrapperInner > a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.493);
+}
+
+.MuiTypography-root{
+    background-color: #fff !important;
+}
+
+
+

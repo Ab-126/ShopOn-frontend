@@ -1,0 +1,91 @@
+.paymentContainer {
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 255, 255);
+  height: 65vh;
+  margin: 2vmax;
+}
+
+.paymentForm {
+  width: 22%;
+  height: 100%;
+}
+
+.paymentForm > p {
+  font: 400 2vmax "Titillium Web";
+  color: rgba(0, 0, 0, 0.753);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 50%;
+  padding: 1vmax 0;
+  margin: auto;
+}
+
+.paymentForm > div {
+  display: flex;
+  align-items: center;
+  margin: 2vmax 0;
+}
+
+.paymentInput {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  outline: none;
+}
+
+.paymentForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.paymentFormBtn {
+  background-color: #cdd4f8;
+  color: #088178;
+  transition: 0.5s;
+  font: 400 1vmax "Titillium Web";
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.paymentFormBtn:hover {
+  background-color: #b2b8d4;
+}
+
+@media screen and (max-width: 600px) {
+  .paymentForm {
+    width: 90%;
+  }
+
+  .paymentForm > p {
+    font: 400 8vw "Titillium Web";
+    padding: 4vw 0;
+    width: 60%;
+  }
+
+  .paymentForm > div {
+    display: flex;
+    align-items: center;
+    margin: 10vw 0;
+  }
+
+  .paymentInput {
+    padding: 4vw 10vw;
+  }
+
+  .paymentForm > div > svg {
+    font-size: 6vw;
+  }
+
+  .paymentFormBtn {
+    font: 300 4vw "Titillium Web";
+    padding: 4vw;
+  }
+}

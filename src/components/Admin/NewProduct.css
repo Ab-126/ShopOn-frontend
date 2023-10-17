@@ -1,0 +1,172 @@
+.newProductContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(221, 221, 221);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  z-index: 999;
+}
+
+.newProductContainer h1{
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: 300;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.createProductForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 3vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 40vh;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.267);
+}
+
+.createProductForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.createProductForm > div > input,
+.createProductForm > div > select,
+.createProductForm > div > textarea {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+  margin: 10px 0;
+}
+
+.createProductForm > div > svg {
+  position: absolute;
+  transform: translate(1vmax);
+  font-size: 1.6vmax;
+  color: rgba(0, 0, 0, 0.623);
+}
+
+.createProductFormImage > img {
+  margin-top: 20px;
+  width: 3vmax;
+  height: 3vmax;
+  /* border-radius: 100%; */
+  margin: 10px;
+}
+
+#createProductFormFile > input[type="file"] {
+  display: flex;
+  padding: 0;
+  margin: 0 2vmax;
+}
+
+#createProductImage{
+    width: 100%;
+    overflow: auto;
+}
+
+#createProductFormFile > input::-webkit-file-upload-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  margin: 0;
+  border: none;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: #088178;
+  background-color: #d1e8f2;
+}
+
+#createProductFormFile > input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #d1e8f2be;
+}
+
+#createProductBtn {
+  border: none;
+  background-color: #e3e6f3;
+  color: #088178;
+  font-weight: 300;
+  font-size: 1vmax;
+  width: 100%;
+  padding: 0.8vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+}
+
+#createProductBtn:hover {
+  background-color: #e3e6f37e;
+}
+
+@media screen and (max-width: 600px) {
+  .LogincreateProductContainerContainer {
+    background-color: white;
+  }
+
+  .LogincreateProductContainerBox {
+    width: 100vw;
+    height: 95vh;
+  }
+
+  .login_createProductContainer_toggle {
+    margin-top: 7.5vmax;
+    height: 5vmax;
+  }
+
+  .login_createProductContainer_toggle > p {
+    font-weight: 300;
+    font-size: 1.8vmax;
+  }
+
+  .loginForm,
+  .createProductForm {
+    padding: 5vmax;
+  }
+
+  .loginForm > div > input,
+  .createProductContainerBtn > div > input {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .loginForm > div > svg,
+  .createProductForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  .loginForm > a {
+    font-weight: 300;
+    font-size: 1.8vmax;
+  }
+
+  #createProductFormFile > img {
+    width: 8vmax;
+    border-radius: 100%;
+  }
+
+  #createProductFormFile > input::file-selector-button {
+    height: 7vh;
+    font: 400 1.8vmax cursive;
+  }
+
+  .loginBtn,
+  .createProductContainerBtn {
+    font-weight: 300;
+    font-size: 1.9vmax;
+    padding: 1.8vmax;
+  }
+}

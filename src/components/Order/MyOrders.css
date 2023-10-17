@@ -1,0 +1,72 @@
+.myOrderPage {
+  width: 100vw;
+  max-width: 100%;
+  padding: 0 7vmax;
+  box-sizing: border-box;
+  background-color: rgb(235, 235, 235);
+  position: fixed;
+  top: 80px;
+  padding-top: 40px;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+}
+
+.myOrdersHeading {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.2vmax;
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  background-color: rgb(44, 44, 44);
+}
+
+.myOrdersTable {
+  background-color: rgb(241, 237, 230);
+}
+
+.myOrdersTable div {
+  font-weight: 300;
+  font-size: 1vmax;
+  color: rgba(0, 0, 0, 0.678);
+  border: none;
+}
+
+.MuiDataGrid-columnHeaders {
+  background-color: #95dab6;
+  padding: 1vmax !important;
+}
+
+.MuiDataGrid-columnHeaders div {
+  color: white;
+  font: 500 1.1vmax cursive !important;
+}
+
+@media screen and (max-width: 600px) {
+  .myOrderPage {
+    padding: 0;
+    height: 93vh;
+  }
+
+  .myOrdersHeading {
+    font-weight: 400;
+    font-size: 2.2vmax;
+    padding: 4vw;
+  }
+
+  .myOrdersTable div {
+    font: 300;
+    font-size: 4vw;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    padding: 20px !important;
+  }
+
+  .MuiDataGrid-columnHeaders div {
+    font: 500 5vw cursive !important;
+  }
+}
