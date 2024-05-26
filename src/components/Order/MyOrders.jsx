@@ -91,7 +91,7 @@ const MyOrders = () => {
       clearErrors();
     }
     dispatch(myOrders());
-  }, [dispatch, error]);
+  }, [dispatch]);
 
   return (
     <Fragment>
